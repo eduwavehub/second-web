@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+*{
+	margin:0;
+	padding:0;
+
+}
+html{
+scroll-behavior:smooth;	
+}
+
+.logo{
+	width:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.logo img{
+	width:35%;
+	border:3px solid white;
+	border-radius:60px;
+}
+.navbar{
+	display:flex;
+	position:sticky;
+	top:0;
+	cursor:pointer;
+	justify-content:center;
+	background:linear-gradient(rgb(155, 133, 133),rgb(91, 81, 81),rgb(45, 42, 42))
+}
+.nav-list{
+	width:70%;
+	display:flex;
+	align-items:center;
+	
+}
+.nav-list li{
+list-style:none;
+padding:15px 40px;
+}
+.nav-list li a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	font-family:'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+	color:rgb(31, 27, 27);
+	transition: all .2s;
+	text-decoration:none;
+}
+	.hover-line::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: rgb(240, 240, 189);
+        transition: width .3s;
+        }
+       .hover-line:hover::after{
+        width: 100%;
+        transition:width 1s;;
+       }
+
+.rightNav{
+	width:30%;
+	text-align:right;
+}
+#search{
+	padding:5px;
+	font-size:17px;
+	border:2px solid grey;
+	border-radius:9px;
+}
+.background{
+	background-image:url('building.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 70vh;
+	
+}
+.box-main{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	max-width:50%;
+	margin:auto;
+	height:65%;
+	padding-top:50px;
+}
+.firstSection{
+	height:70vh;
+}
+.firstHalf{
+	width:80%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.secondHalf img{
+		width:70%;
+		display:block;
+		margin:auto;
+
+}
+
+.secondHalf{
+		width:30%;
+}
+.btn{
+	padding:8px 25px;
+	margin:7px 3px;
+	border:2px solid white;
+	border-radius:8px;
+	cursor:pointer;
+}
+.text-big{
+	font-size:35px;
+}
+.text-small{
+	padding:20px 0;
+	font-size:20px;
+}
+.btn-sm{
+	padding:5px 40px;
+	vertical-align:middle;
+	font-size:16px;
+}
+.section{
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+	max-width:80%;
+	font-family: 'Ubuntu', sans-serif;
+	margin:auto;
+	padding:10px;
+}
+.sectionTag{
+	padding:16px 0;
+}
+.section-left{
+	flex-direction:row-reverse;
+}
+.paras{
+	padding:0px 30px;
+}
+.thunb img{
+	width:270px;
+	height:250px;
+	border:2px solid black;
+	border-radius:25px;
+	margin-top:20px;
+}
+.contact{
+	height:700px;
+	
+}
+.text-center{
+	text-align:center;
+	padding-top:25px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:30px;
+}
+.form{
+	max-width:62%;
+	margin:25px auto;
+}
+
+.form-input{
+	width:100%;
+	padding:5px 15px;
+	margin:15px 0;
+	font-size:20px;
+	border:2px soild grey;
+	border-radius:6px;
+}
+.btn-dark{
+	color:black;
+	border:2px solid grey;
+	
+}
+.back-footer{
+	background-color:rgb(53, 59, 56);
+}
+
+.text-footer{
+	text-align:center;
+	padding:30px 0;
+	display:flex;
+	justify-content:center;	
+	color:white;
+}
+
+       .footer-mid{
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .footer-mid a{
+        height: 40px;
+        width: 50px;
+        background-color:rgb(181, 163, 163);
+        border-radius: 40px;
+        text-align:center;
+        margin: 10px;
+        text-decoration:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		
+       }
+       .footer-mid a i{
+        transition: all .2s linear;
+       }
+       .footer-mid a:hover i{
+        font-size:25;
+       }
+       .fa-square-facebook{
+        color: blue;
+       }
+       .fa-instagram{
+        color: rgb(135, 20, 135);
+       }
+       .fa-youtube{
+        color: rgb(233, 14, 14);
+       }
+.burger{
+	position:absolute;
+	cursor:pointer;
+	right:4%;
+	top:15px;
+	display:none;
+}
+.line{
+	width:30px;
+	background-color:white;
+	height:3px;
+	margin:3px 3px;
+}
+@media only screen and (max-width:1240px){
+	.nav-list{
+		flex-direction:column;
+		width:100%;
+		text-align:center;
+	}
+	.navbar{
+		flex-direction:column;
+			height:380px;
+			text-align:right;
+			justify-content:center;
+			transition:all 0.7s ease-out;
+	}
+	.rightNav{
+		text-align:center;
+		padding-left:350px;
+	}
+	.burger{
+		display:block;
+	}
+	.h-nav{
+		height:70px;
+	}
+	.v-class{
+		opacity:0;
+	}
+	.box-main{
+		flex-direction:column-reverse;
+		max-width:100%;
+	}
+	.section{
+		flex-direction:column-reverse;
+	}
+	.text-small{
+		text-align:center;
+	}
+	.text-big{
+		text-align:center;
+	}
+	.buttons{
+		text-align:center;
+	}
+	.paras{
+	padding:0px;
+    }
+}
